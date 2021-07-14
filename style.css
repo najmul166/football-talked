@@ -65,8 +65,33 @@ h1{
 .new{
     margin: 20px opx 20px 0px;
 }
+article{
+    height: 300px;
+    width: 100%;
+}
 .new img{
     margin-left:300px ;
+}
+.ball{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(245, 245, 98);
+    position: relative;
+    left: 750px;
+    top:130px;
+    transition: transform 1s ease-out;
+
+}
+header:hover .ball{
+    transform: translate(-900px,-120px);
+
+}
+.noton{
+    display: flex;
+    height: 100px;
+    width:300px;
+    margin-left: 500px;
 }
 footer{
     left: 0;
@@ -77,12 +102,7 @@ footer{
     color: black;
     text-align: center;
  }
- .noton{
-     display: flex;
-     height: 100px;
-     width:300px;
-     margin-left: 500px;
- }
+ 
  @media only screen and (max-width:688px){
      .noton{
          margin-left: 140px;
@@ -105,4 +125,18 @@ footer{
         flex-wrap: wrap;
         margin-left: 20px;
      }
+     .ball{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: rgb(245, 245, 98);
+        position: relative;
+        left: 115px;
+        top:540px;
+        transition: transform 1s ease-out;
+    
+    }
+    header:hover .ball{
+        transform: translate(-900px,-120px);
+    }
  }
